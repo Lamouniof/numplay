@@ -1,0 +1,17 @@
+[target.thumbv7em-none-eabihf]
+runner = 'npx --yes -- nwlink install-nwa'
+rustflags = [
+    "-C",
+    "link-arg=--relocatable",
+    "-C",
+    "link-arg=-no-gc-sections",
+    "-C",
+    "target-cpu=cortex-m7",
+    # addresses as plain words (no movw/movt pairs), which NumPlay can move
+    # into its shared RAM (tools/npmodule.py)
+    "-C",
+    "target-feature=+no-movt",
+]
+
+[build]
+target = "thumbv7em-none-eabihf"

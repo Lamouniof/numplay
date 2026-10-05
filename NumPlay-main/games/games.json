@@ -1,0 +1,363 @@
+[
+  {
+    "id": "numdash",
+    "title": "NumDash",
+    "tagline": "Jump to the beat",
+    "credit": null,
+    "top": "0x3D6BFF",
+    "bottom": "0x14124F",
+    "accent": "0x35C759",
+    "records": [
+      "numdash.nds",
+      "numdash.ndd",
+      "numdash1.ndl",
+      "numdash2.ndl",
+      "numdash3.ndl"
+    ],
+    "shots": [
+      "docs/screenshots/menu.png"
+    ],
+    "repo": "https://github.com/Mason363/NumDash",
+    "reset": [
+      "numdash.nds"
+    ]
+  },
+  {
+    "id": "crossyroad",
+    "title": "Crossy Road",
+    "tagline": "Hop, dodge, survive",
+    "credit": null,
+    "top": "0x45B649",
+    "bottom": "0x10421C",
+    "accent": "0xFF8A1F",
+    "records": [
+      "crossyroad.sav"
+    ],
+    "shots": [
+      "screenshots/title.png"
+    ],
+    "repo": "https://github.com/Mason363/CrossyWorks"
+  },
+  {
+    "id": "numblocks",
+    "title": "NumBlocks",
+    "tagline": "Mine, craft, survive",
+    "credit": "Inspired by Minecraft, not affiliated with Mojang",
+    "top": "0x5D9C3A",
+    "bottom": "0x2E2116",
+    "accent": "0x7FCC4A",
+    "records": [
+      "numblocks.cfg",
+      "nb1.nbw",
+      "nb1r*",
+      "nb2.nbw",
+      "nb2r*",
+      "nb3.nbw",
+      "nb3r*",
+      "nb4.nbw",
+      "nb4r*",
+      "nb5.nbw",
+      "nb5r*",
+      "nb6.nbw",
+      "nb6r*",
+      "nb7.nbw",
+      "nb7r*",
+      "nb8.nbw",
+      "nb8r*",
+      "nb9.nbw",
+      "nb9r*"
+    ],
+    "reset": [
+      "nb1.nbw",
+      "nb1r*",
+      "nb2.nbw",
+      "nb2r*",
+      "nb3.nbw",
+      "nb3r*",
+      "nb4.nbw",
+      "nb4r*",
+      "nb5.nbw",
+      "nb5r*",
+      "nb6.nbw",
+      "nb6r*",
+      "nb7.nbw",
+      "nb7r*",
+      "nb8.nbw",
+      "nb8r*",
+      "nb9.nbw",
+      "nb9r*"
+    ],
+    "shots": [
+      "docs/shot.png"
+    ],
+    "app": "NumBlocks.nwa",
+    "repo": "https://github.com/Mason363/NumPlay/tree/main/games/numblocks"
+  },
+  {
+    "id": "numtycoon",
+    "title": "NumTycoon",
+    "tagline": "Build, optimize, dominate",
+    "credit": "Original NumPlay tycoon expansion",
+    "top": "0x2A6B8A",
+    "bottom": "0x0E1726",
+    "accent": "0xFFC857",
+    "records": [
+      "numtycoon.sav"
+    ],
+    "shots": [
+      "docs/shot.png"
+    ],
+    "app": "NumTycoon.nwa",
+    "repo": "https://github.com/Mason363/NumPlay/tree/main/games/numtycoon"
+  },
+  {
+    "id": "numdrive",
+    "title": "NumDrive",
+    "tagline": "Drive, flip, finish",
+    "credit": null,
+    "top": "0x35A8F0",
+    "bottom": "0x123A63",
+    "accent": "0xFFB020",
+    "records": [
+      "drivemad.sav"
+    ],
+    "shots": [
+      "docs/shot1.png"
+    ],
+    "repo": "https://github.com/Mason363/NumDrive"
+  },
+  {
+    "id": "balatro",
+    "title": "Balatro",
+    "tagline": "Poker hands, wild jokers",
+    "credit": null,
+    "top": "0xFE5F55",
+    "bottom": "0x1E2A2C",
+    "accent": "0x009DFF",
+    "records": [
+      "balatro.sav"
+    ],
+    "shots": [
+      "docs/shot.png"
+    ],
+    "repo": "https://github.com/Mason363/NumPlay/tree/main/games/balatro"
+  },
+  {
+    "id": "buckshot",
+    "title": "Buckshot Roulette",
+    "tagline": "You, the Dealer, one shotgun",
+    "credit": null,
+    "top": "0x4A2A26",
+    "bottom": "0x0E0A09",
+    "accent": "0xD83A2E",
+    "records": [
+      "buckshot.sav"
+    ],
+    "shots": [
+      "docs/shot.png"
+    ],
+    "repo": "https://github.com/Mason363/NumPlay/tree/main/games/buckshot"
+  },
+  {
+    "id": "portal",
+    "title": "Portal Returns",
+    "tagline": "Think with portals",
+    "credit": null,
+    "top": "0x4A4952",
+    "bottom": "0x1B1A20",
+    "accent": "0x1C83E0",
+    "records": [
+      "portal.sav"
+    ],
+    "shots": [
+      "docs/shot.png"
+    ],
+    "repo": "https://github.com/Mason363/NumPlay/tree/main/games/portal"
+  },
+  {
+    "id": "tetris",
+    "title": "Tetris",
+    "tagline": "Stack and clear lines",
+    "credit": "By Tatone26, from All the Apps",
+    "top": "0x8A4DFF",
+    "bottom": "0x1E0B45",
+    "accent": "0xFF4FA3",
+    "records": [
+      "tetris.sav",
+      "tetris.set"
+    ],
+    "shots": [
+      "docs/shot1.png"
+    ],
+    "repo": "https://github.com/Tatone26/Numworks-games/tree/main/apps/tetris"
+  },
+  {
+    "id": "chess",
+    "title": "Chess",
+    "tagline": "Bots, puzzles, 2 players",
+    "credit": null,
+    "top": "0x7FA650",
+    "bottom": "0x22211E",
+    "accent": "0x81B64C",
+    "records": [
+      "numchess.sav"
+    ],
+    "shots": [
+      "docs/italian.png"
+    ],
+    "repo": "https://github.com/Mason363/NumChess"
+  },
+  {
+    "id": "flappybird",
+    "title": "Flappy Bird",
+    "tagline": "Flap through the pipes",
+    "credit": "Inspired by Tatone26's All the Apps",
+    "top": "0x4EC0CA",
+    "bottom": "0x10474C",
+    "accent": "0xF8B733",
+    "records": [
+      "flappy.sav"
+    ],
+    "shots": [
+      "docs/shot.png"
+    ],
+    "app": "FlappyBird.nwa",
+    "repo": "https://github.com/Mason363/NumPlay/tree/main/games/flappybird"
+  },
+  {
+    "id": "pacman",
+    "title": "Pac-Man",
+    "tagline": "Eat dots, dodge ghosts",
+    "credit": "Inspired by Tatone26's All the Apps",
+    "top": "0x2A2AE0",
+    "bottom": "0x05052A",
+    "accent": "0xFFD800",
+    "records": [
+      "pacman.sav"
+    ],
+    "shots": [
+      "docs/shot.png"
+    ],
+    "app": "PacMan.nwa",
+    "repo": "https://github.com/Mason363/NumPlay/tree/main/games/pacman"
+  },
+  {
+    "id": "snake",
+    "title": "Snake",
+    "tagline": "Eat apples, grow long",
+    "credit": "Inspired by Tatone26's All the Apps",
+    "top": "0x5B9A36",
+    "bottom": "0x16330B",
+    "accent": "0x4E7CF6",
+    "records": [
+      "snake.sav"
+    ],
+    "shots": [
+      "docs/shot.png"
+    ],
+    "app": "Snake.nwa",
+    "repo": "https://github.com/Mason363/NumPlay/tree/main/games/snake"
+  },
+  {
+    "id": "connectfour",
+    "title": "Connect Four",
+    "tagline": "Four in a row wins",
+    "credit": "Inspired by Tatone26's All the Apps",
+    "top": "0x2A66D0",
+    "bottom": "0x0A1F4A",
+    "accent": "0xF4C20D",
+    "records": [
+      "connect4.sav"
+    ],
+    "shots": [
+      "docs/shot.png"
+    ],
+    "app": "ConnectFour.nwa",
+    "repo": "https://github.com/Mason363/NumPlay/tree/main/games/connectfour"
+  },
+  {
+    "id": "solitaire",
+    "title": "Solitaire",
+    "tagline": "The classic card game",
+    "credit": "Inspired by Tatone26's All the Apps",
+    "top": "0x34A249",
+    "bottom": "0x123F20",
+    "accent": "0x1A73E8",
+    "records": [
+      "solitaire.sav"
+    ],
+    "shots": [
+      "docs/shot.png"
+    ],
+    "app": "Solitaire.nwa",
+    "repo": "https://github.com/Mason363/NumPlay/tree/main/games/solitaire"
+  },
+  {
+    "id": "g2048",
+    "title": "2048",
+    "tagline": "Slide, merge, reach 2048",
+    "credit": "Based on 2048 by Gabriele Cirulli",
+    "top": "0xC9A26B",
+    "bottom": "0x3C2E22",
+    "accent": "0xEDC22E",
+    "records": [
+      "g2048.sav"
+    ],
+    "shots": [
+      "docs/shot.png"
+    ],
+    "app": "2048.nwa",
+    "repo": "https://github.com/Mason363/NumPlay/tree/main/games/g2048"
+  },
+  {
+    "id": "minesweeper",
+    "title": "Minesweeper",
+    "tagline": "Clear the field, flag the mines",
+    "credit": null,
+    "top": "0x6F7C8C",
+    "bottom": "0x1C222B",
+    "accent": "0xE0301E",
+    "records": [
+      "mines.sav"
+    ],
+    "shots": [
+      "docs/shot.png"
+    ],
+    "app": "Minesweeper.nwa",
+    "repo": "https://github.com/Mason363/NumPlay/tree/main/games/minesweeper"
+  },
+  {
+    "id": "breakout",
+    "title": "Block Breaker",
+    "tagline": "Break every brick",
+    "credit": null,
+    "top": "0x3A3440",
+    "bottom": "0x0E0B10",
+    "accent": "0x5784E6",
+    "records": [
+      "breakout.sav"
+    ],
+    "shots": [
+      "docs/shot.png"
+    ],
+    "app": "BlockBreaker.nwa",
+    "repo": "https://github.com/Mason363/NumPlay/tree/main/games/breakout"
+  },
+  {
+    "id": "numvisuals",
+    "title": "NumVisuals",
+    "tagline": "Backgrounds, clocks, timers",
+    "credit": null,
+    "top": "0x7A2BFF",
+    "bottom": "0x1B0B3A",
+    "accent": "0xFF3E8A",
+    "records": [
+      "numvisuals.sav"
+    ],
+    "shots": [
+      "docs/shot.png"
+    ],
+    "colors": 64,
+    "repo": "https://github.com/Mason363/NumPlay/tree/main/games/numvisuals"
+  }
+]

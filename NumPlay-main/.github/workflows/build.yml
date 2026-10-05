@@ -1,0 +1,75 @@
+name: Build
+
+# Builds NumPlay.nwa, its discreet versions and every game on its own, and publishes them as a GitHub
+# release when main reaches a version (VERSION) not released yet. Pushing a tag like v1.2.0 does too.
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: ARM toolchain
+        run: |
+          v=15.2.1-1.1
+          curl -sSL "https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases/download/v$v/xpack-arm-none-eabi-gcc-$v-linux-x64.tar.gz" | tar -xz -C "$RUNNER_TEMP"
+          echo "$RUNNER_TEMP/xpack-arm-none-eabi-gcc-$v/bin" >> "$GITHUB_PATH"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Tools
+        run: |
+          sudo apt-get update -q && sudo apt-get install -yq pngquant
+          pip install pillow zopfli pyelftools unicorn==2.1.4
+          npm install -g nwlink@1.0.0
+          rustup target add thumbv7em-none-eabihf
+
+      - name: Build
+        run: make -j4 nwa apps check NWLINK=nwlink
+
+      - name: Test
+        run: |
+          python3 tests/test_games.py build/apps
+          python3 tests/test_uninstall.py build/NumPlay.nwa --game numdrive
+          python3 tests/test_progress.py build/NumPlay.nwa
+          python3 tests/test_numblocks_progress.py build/apps/NumBlocks.nwa
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: nwa
+          path: |
+            build/NumPlay*.nwa
+            build/apps/*.nwa
+
+      - name: Release
+        if: startsWith(github.ref, 'refs/tags/v') || (github.ref == 'refs/heads/main' && github.event_name != 'pull_request')
+        env:
+          GH_TOKEN: ${{ github.token }}
+        # The tag pushed, or on main v + VERSION (made here if it isn't released yet). GitHub lists the
+        # files A to Z: the notes list them in order, and each file gets a label
+        run: |
+          if [[ "$GITHUB_REF" == refs/tags/* ]]; then tag="$GITHUB_REF_NAME"; else tag="v$(tr -d '[:space:]' < VERSION)"; fi
+          if gh release view "$tag" > /dev/null 2>&1; then
+            echo "$tag is already released"
+            exit 0
+          fi
+          python3 tools/release.py --tag "$tag" --notes build/release-notes.md > build/release-files.txt
+          mapfile -t files < build/release-files.txt
+          gh release create "$tag" "${files[@]}" --target "$GITHUB_SHA" \
+            --title "NumPlay $tag" --notes-file build/release-notes.md

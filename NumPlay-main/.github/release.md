@@ -1,0 +1,1 @@
+**New here?** Download **NumPlay.nwa**, then follow the [2-minute install guide](https://github.com/Mason363/NumPlay#how-to-install). [How to play](https://github.com/Mason363/NumPlay/blob/main/docs/play.md)
